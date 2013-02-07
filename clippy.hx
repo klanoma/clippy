@@ -39,7 +39,7 @@ class Clippy {
 
     button.addEventListener(MouseEvent.MOUSE_UP, function(e:MouseEvent) {
       flash.system.System.setClipboard(text);
-      label.text = "";
+      label.text = " ";
       label.setTextFormat(format);
     });
 
@@ -49,7 +49,7 @@ class Clippy {
 
     button.addEventListener(MouseEvent.MOUSE_OUT, function(e:MouseEvent) {
       label.visible = false;
-      label.text = "";
+      label.text = " ";
       label.setTextFormat(format);
     });
 
